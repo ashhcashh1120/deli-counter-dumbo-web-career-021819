@@ -22,3 +22,11 @@ def take_a_number(katz_deli, name)
  puts "Welcome, #{name}. You are number #{katz_deli.index(name)+1} in line."
  return name, place
 end
+
+def now_serving(katz_deli)
+  if katz_deli.empty? == true 
+  puts "There is nobody waiting to be served!"
+elsif katz_deli.empty? == false 
+  puts "Currently serving #{katz_deli.shift}."
+end 
+end 
